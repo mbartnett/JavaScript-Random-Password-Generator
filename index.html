@@ -9,16 +9,27 @@
     <title>Random Password Generator</title>
 </head>
 <body>
-    <main>
-        <section class="box">
-            <h2>Random Password Generator</h2>
-            <input type="text" name="" placeholder="Create password" id="password" readonly>
-            <table>
-                <th><div id="button" class="button"onclick="genPassword()">Generate</div></th>
-                <th><a  id="button" class="other-button" onclick="copyPassword()">Copy</a></th>
-             </table>
-        </section>
-    </main>
-    <script src="script.js"    
-</body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
