@@ -78,40 +78,17 @@ h2 {
   align-content: center;
 }
 
-/*
-#password, #character {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 85px;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px dashed #c0c7cf;
-    border-radius: 6px;
-    resize: none;
-    overflow: hidden;
-  }
-  */
-
-/* Making the card-body copy switch */
+/* making the card-body copy switch on interaction */
 
 #password-card {
-    display:none;
+display:inline;
 }
 
-#character-type {
-
+#character-card {
+display:none;
 }
 
-/* End making card-body copy switch */
+/* end making card-body copy switch on interaction */
 
 .card-footer {
   text-align: center;
@@ -155,6 +132,29 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
+/*
+#password, #character {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+  }
+  */
 
 @media (max-width: 690px) {
   .btn {
