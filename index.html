@@ -20,14 +20,40 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+
+<!-- PASSWORD OPTIONS -->
+
+<div class="card-body" id="password-card">
+    <p>Your Secure Password</p>
+</div>
+
+<div class="card-body" id="character-type">
+    <div class="card-wrapper">
+        <p>Chooose Your Characters</p>
+        <p><input type="checkbox" id="uppercase" name="uppercase">
+        <label for="uppercase">Uppercase</label>
+        <input type="checkbox" id="lowercase" name="lowercase">
+        <label for="lowercase">Lowercase</label>
+        <input type="checkbox" id="numbers" name="numbers">
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="special-characters" name="special-characters">
+        <label for="special-characters">Special Characters</label></p>
+        <p>Chooose Your Password Length</p>
+        <div class="slidecontainer" style="margin:20px;">
+            <input type="range" min="8" max="128" value="64" class="slider" id="character-range">
         </div>
+    </div>  
+</div>
+
+<div class="card-body" id="character-length">
+    <p>Chooose Your Password Length</p>
+    <div class="slidecontainer" style="margin:20px;">
+        <input type="range" min="8" max="128" value="64" class="slider" id="character-range">
+      </div>
+</div>
+
+<!-- END PASSWORD OPTIONS -->
+        
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
@@ -37,22 +63,3 @@
   </body>
 </html>
 
-<!--
-
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-
--->

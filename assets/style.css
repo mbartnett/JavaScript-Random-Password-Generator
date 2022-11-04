@@ -13,8 +13,12 @@ body,
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
   background-color: deepskyblue
+}
+
+p {
+    font-family: monospace;
+    color:gray;
 }
 
 .wrapper {
@@ -34,9 +38,12 @@ h1 {
     color: white;
     font-size: 48px;
     line-height: 52px;
+    font-family: 'Kanit', sans-serif;
+
 }
 
 h2 {
+    font-family: 'Kanit', sans-serif;
     color:deepskyblue;
 }
 
@@ -62,7 +69,49 @@ h2 {
 
 .card-body {
   min-height: 100px;
+  text-align:center;
+  font-family:monospace;
+  color:gray;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
+/*
+#password, #character {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+  }
+  */
+
+/* Making the card-body copy switch */
+
+#password-card {
+    display:none;
+}
+
+#character-type {
+
+}
+
+/* End making card-body copy switch */
 
 .card-footer {
   text-align: center;
@@ -107,27 +156,6 @@ button[disabled] {
   float: right;
 }
 
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
-
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -135,7 +163,7 @@ button[disabled] {
     padding: 10px 15px;
   }
 
-  #password {
+  #password, #character-type {
     font-size: 1rem;
   }
 }
