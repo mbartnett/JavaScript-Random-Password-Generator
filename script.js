@@ -5,12 +5,13 @@
 // THEN #character-card.display:inline;
 
 var generateBtn = document.querySelector("#generate");
+var passwordCard = document.getElementById("password-card");
+var characterCard = document.getElementById("character-card");
 
-function cardBody() {
-  document.getElementById('password-card');
-  document.getElementById('character-card');
+generateBtn.onclick = function () {
+  passwordCard.style.display = "none";
+  characterCard.setAttribute("style", "display: inline;");
 }
-
 
 
 
