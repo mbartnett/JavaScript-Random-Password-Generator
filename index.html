@@ -28,23 +28,33 @@
 </div>
 
 <div class="card-body" id="character-card">
-    <div class="card-wrapper">
-        <p>Chooose Your Characters</p>
-        <p><input type="checkbox" id="uppercase" name="uppercase">
-        <label for="uppercase">Uppercase</label>
-        <input type="checkbox" id="lowercase" name="lowercase">
-        <label for="lowercase">Lowercase</label>
-        <input type="checkbox" id="numbers" name="numbers">
-        <label for="numbers">Numbers</label>
-        <input type="checkbox" id="special-characters" name="special-characters">
-        <label for="special-characters">Special Characters</label></p>
-        <p>Chooose Your Password Length</p>
-        <div class="slidecontainer" style="margin:20px;">
-            <input type="range" min="8" max="128" value="64" class="slider" id="character-range">
-        </div>
-    </div>  
-</div>
 
+<div class="card-wrapper">
+    <form action="action_page.php">
+    <p>Chooose Your Characters</p>
+    <p><input type="checkbox" id="lowercase" name="lowercase" checked>
+    <label for="lowercase">Lowercase</label>
+
+    <input type="checkbox" id="uppercase" name="uppercase">
+    <label for="uppercase">Uppercase</label>
+    
+    <input type="checkbox" id="numeric" name="numeric">
+    <label for="numeric">Numeric</label>
+    
+    <input type="checkbox" id="special-characters" name="special-characters">
+    <label for="special-characters">Special Characters</label></p>
+    <p>Chooose Your Password Length</p>
+    <div class="slidecontainer" style="margin:20px;">
+        <input type="range" min="8" max="128" value="64" class="slider" id="character-range">
+    </div>
+    <input type="submit" value="Submit">
+    </form>
+</div>  
+
+
+
+
+</div>
 <!-- end password options -->
         
         <div class="card-footer">

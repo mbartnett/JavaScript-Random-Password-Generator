@@ -13,6 +13,13 @@ generateBtn.onclick = function () {
   characterCard.setAttribute("style", "display: inline;");
 }
 
+// create an array of the character type
+// determine which boxes in the array are selected
+// IF selected checkboxes is 0 
+// AND the generate button is pressed
+// THEN create alert, "You must select at least one character type."
+// ELSE continue to generate password 
+
 
 
 
