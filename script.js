@@ -4,13 +4,21 @@
 var generateBtn = document.querySelector("#generate");
 
 var charCount;
-
+var uppercase;
+var lowercase;
+var number;
+var specialChar;
 
 function generatePassword (){
   charCount = window.prompt("How many characters would you like your password to be?");
   console.log(charCount);
   IF THEN
 }
+
+uppercase = window.confirm("Would you like to use uppercase letters?");
+lowercase = window.confirm("Would you like to use lowercase letters?");
+number = window.confirm("Would you like to use numbers?");
+specialChar = window.confirm("Would you like to use special characters?");
 
 // Write password to the #password input
 function writePassword() {
