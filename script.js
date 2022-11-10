@@ -13,9 +13,8 @@ let possibleChars = [];
 function generatePassword() {
   let password = ""
   let charCount = window.prompt("How many characters would you like your password to be?");
-  if (parseInt) (charCount) < 8 || (parseInt)(charCount) > 128;
+  if (parseInt)(charCount) < 8 || (parseInt)(charCount) > 128;
   alert("Your password must be between 8 and 128 characters.");
-  
   let uppercase = window.confirm("Would you like to use uppercase letters?");
   let lowercase = window.confirm("Would you like to use lowercase letters?");
   let numeric = window.confirm("Would you like to use numbers?");
