@@ -21,7 +21,7 @@ function generatePassword (){
   if(uppercase == false && lowercase == false && numeric == false && specialChar == false){
     alert ("You need to select at least one character type.");
   }
-
+  
   let passwordOption = {
     uppercase: uppercase,
     lowercase: lowercase,
