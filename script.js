@@ -1,15 +1,17 @@
 // Assignment Code
 
-//generateBtn.onclick = function(){
+// Targeting the password button
 var generateBtn = document.querySelector("#generate");
 var generatePwd = document.querySelector("#pw");
 
+
+// Character arrays
 let big = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let little = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 let spec = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "-", "+", "="];
-let possibleChars = [];
 
+// Function that generates the password
 function generatePassword() {
   let password = ""
   let charCount = window.prompt("How many characters would you like your password to be?");
@@ -44,13 +46,13 @@ function generatePassword() {
   return password;
 }
 
-// Write password to the #password input
+// Function that writes the password to the #password input
 function writePassword() {
   var password = generatePassword();
   generatePwd.textContent = password
 }
 
-// Add event listener to generate button
+// Adds an event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 
